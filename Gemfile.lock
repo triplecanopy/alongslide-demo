@@ -27,7 +27,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
-    alongslide (0.9.4)
+    alongslide (0.9.5)
       polyglot
       redcarpet
       treetop
