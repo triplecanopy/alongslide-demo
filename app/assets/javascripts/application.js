@@ -2,10 +2,33 @@
 //= require underscore
 //= require alongslide
 
-// Render Alongslide on DOM ready.
+MIN_WINDOW_WIDTH = 980
+
+// On DOM ready, load fonts
 // 
-$(function() {
-  MIN_WINDOW_WIDTH = 980
+$(document).ready(function() {
+  WebFont.load({
+    // Demo webfonts from Google Fonts
+    google: {
+      families: ['Asap:400,700,400italic,700italic', 'Source Code Pro']
+    },
+    active: function() {
+      loadStyles()
+    }
+  })
+})
+
+// Load style
+// 
+function loadStyles() {
+  Styles.prototype.doLoad(function() {
+    render()
+  })
+}
+
+// Render Alongslide
+// 
+function render() {
   window.alongslide = new Alongslide({
     source: '#content',
     to: '#frames'
@@ -14,4 +37,4 @@ $(function() {
   window.alongslide.render(frameAspect, function() {
       FixedAspect.prototype.fitPanels(frameAspect)
   })
-})
+}

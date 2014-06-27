@@ -1,4 +1,7 @@
 /*
  *= require alongslide
- *= require ./demo
  */
+
+a {
+  text-decoration: none;
+}
