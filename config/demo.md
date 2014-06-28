@@ -12,6 +12,8 @@
     
     + unpin intro
     
+    + section technology 
+    
     + panel technology-layers pin top two-thirds
     
     ### Technology layers
@@ -52,8 +54,8 @@ For an example of a longer text, see the below an excerpt from the upcoming Alon
 
 > By integrating recorded and textual media, digital publishing conceives of the experience of reading in both temporal and spatial terms; whereas a book might contain paragraphs and a series of images, only digital forms can map the particular experience of one onto the other by regulating the way in which the reader progresses through a text. The syntax of Alongslide emphasizes—even extols—this development by enabling editors to define the “start” and “end” points of content elements within a layout, as though they were being arranged on a timeline. (In fact, Alongslide’s underlying scrolling mechanism is based on a fundamental technique borrowed from the domain of animation and motion design: the use of key frames, which articulate transition points in the linear flow of data.) As user interfaces are increasingly imbued with virtual tactility, thanks to animated interaction cues, digital reading platforms will continue to incorporate motion design and animation—and justly so, as they have defined the experience of screen-based forms since the medium originated 125 years ago.
 
-  + unpin this-is-a-panel
-   
-  + panel philosophy fullscreen fade-in
-   
-  ### As with Markdown, a philosophical principle of Alongslide is that plain-text authoring environments can be just as powerful as WYSIWIG, and further enable (and encourage) writing solid, structural markup.
+    + unpin this-is-a-panel
+
+    + panel philosophy fullscreen fade-in
+
+    ### As with Markdown, a philosophical principle of Alongslide is that plain-text authoring environments can be just as powerful as WYSIWIG, and further enable (and encourage) writing solid, structural markup.
