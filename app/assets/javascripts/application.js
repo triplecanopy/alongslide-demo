@@ -36,5 +36,6 @@ function render() {
   frameAspect = FixedAspect.prototype.fitFrame(MIN_WINDOW_WIDTH)
   window.alongslide.render(frameAspect, function() {
       FixedAspect.prototype.fitPanels(frameAspect)
+      $('#content-display').animate({opacity: 1.0}, 150)
   })
 }
