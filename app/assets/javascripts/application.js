@@ -2,7 +2,6 @@
 //= require underscore
 //= require alongslide
 
-MIN_WINDOW_WIDTH = 980
 DEBOUNCE_RESIZE_MS = 250
 
 // On DOM ready, load fonts
@@ -41,19 +40,15 @@ function init() {
 // 
 function render() {
   $('#content-display').css({opacity: 0.0})
-  frameAspect = FixedAspect.prototype.fitFrame(MIN_WINDOW_WIDTH)
-  window.alongslide.render(frameAspect, function() {
-      FixedAspect.prototype.fitPanels(frameAspect)
-      $('#content-display').animate({opacity: 1.0}, 150)
+  window.alongslide.render(function() {
+    $('#content-display').animate({opacity: 1.0}, 150)
   })
 }
 
 // Refresh Alongslide (update scroll handlers without re-flowing all content)
 // 
 function refresh() {
-  frameAspect = FixedAspect.prototype.fitFrame(MIN_WINDOW_WIDTH)
-  window.alongslide.refresh(frameAspect)
-  FixedAspect.prototype.fitPanels(frameAspect)
+  window.alongslide.refresh()
 }
 
 // Resize handler
@@ -65,7 +60,5 @@ $(window).resize(function() {
   refresh()
 
   clearTimeout(window.renderTimeout)
-  window.renderTimeout = setTimeout(function() {
-    render()
-  }, DEBOUNCE_RESIZE_MS)
+  window.renderTimeout = setTimeout(render, DEBOUNCE_RESIZE_MS)
 })
