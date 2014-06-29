@@ -62,3 +62,9 @@ $(window).resize(function() {
   clearTimeout(window.renderTimeout)
   window.renderTimeout = setTimeout(render, DEBOUNCE_RESIZE_MS)
 })
+
+// Log render progress to console
+// 
+$(document).on('alongslide.progress', function(e, progress) {
+  if (console) console.log("Alongslide render progress: " + (progress * 100) + "%")
+})
