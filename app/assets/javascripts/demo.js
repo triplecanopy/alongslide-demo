@@ -13,7 +13,7 @@ $(function() {
 
   // click handler: close modal
   $(document).on('click', function(event) {
-    if ($(event.target).is('a')) return true
+    if ($(event.target).is('a') && !$(event.target).is('a.close')) return true
     $('#markdown-source').removeClass('on')
     return false
   })
