@@ -1,6 +1,7 @@
 //= require jquery
 //= require underscore
 //= require alongslide
+//= require demo
 
 DEBOUNCE_RESIZE_MS = 250
 

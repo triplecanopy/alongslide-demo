@@ -8,3 +8,10 @@
 <div id="content" style="display: none">
   <%= raw Alongslide::render(@markdown_content) %>
 </div>
+<div id="markdown-source">
+  <a class="close" href="#">Close</a>
+  <div class="source">
+    <h3>Alongslide/Markdown Source for this page</h3>
+    <%= raw format_markdown_source(@markdown_content) %>
+  </div>
+</div>
